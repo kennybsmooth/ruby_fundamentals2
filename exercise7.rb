@@ -31,3 +31,15 @@ end
   students.each do |k, v|
     puts "#{(v * 1.05).to_i}"
   end
+
+  #Delete a cohort using the delete method
+  puts "Delete the 2nd cohort and redisplay the hash."
+  students.delete(:cohort2)
+  puts students
+
+  puts "BONUS: Calculate the total number of students across all cohorts using each and a variable to keep track of the total. Output the result."
+  total_students = 0
+  students.each do |k, v|
+    total_students += v
+  end
+  puts "The total number of students is #{total_students}"
