@@ -23,3 +23,12 @@ end
 
 # Q4 Show 2nd item on the list by callist list[1] because it starts at zero
 puts "The 2nd item on the list is #{grocery_list[1]}"
+
+# Q5 sort the array but make sure
+puts "This is Q5"
+asterisk (grocery_list).sort
+
+# Q6 Delete the salmon from the list using .delete("salmon")
+puts "This is Q6"
+grocery_list.delete("salmon")
+asterisk (grocery_list)
